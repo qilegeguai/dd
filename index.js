@@ -13,6 +13,7 @@ async function main() {
   let js_order = ['360影视', '菜狗', '奇珍异兽', '优酷', '腾云驾雾', '百忙无果', '哔哩影视'];
   let js_path = './drpy_js';
   let live_path = './lives';
+  let config_path = './custom.json';
   let js_api = './drpy_libs/drpy2.min.js';
   let parse_apis = ['777,https://jx.777jiexi.com/player/?url=,0', '8090g,https://www.8090g.cn/jiexi/?url=,0','红狐,https://player.mrgaocloud.com/player/?url=,0'];
   let parses = parse_apis.map((it) => {
@@ -58,6 +59,13 @@ async function main() {
   // console.log(js_files);
   let live_files = pathLib.readDir(pathLib.join(path_dir, live_path));
   // console.log(live_files);
+  let config_sites = [];
+  try{
+	  let config_file = pathLib.readFile(pathLib.join(path_dir, config_path));
+	  config_sites = JSON.parse(config_file).sites;
+  }catch(e){
+	  console.log(`get config_file error:${e.message}`);
+  }
   let channels = [];
   live_files.forEach((it) => {
     let absp = pathLib.join(path_dir, `${live_path}/${it}`).replace(/\\/g, '/');
@@ -87,6 +95,8 @@ async function main() {
   let json_config = {
     'wallpaper': 'https://tuapi.eees.cc/api.php?category=fengjing&type=302',
     'homepage': 'https://github.com/hjdhnx/hipy-server',
+    "homeLogo":"./img/logo500x200-1.png",
+    "spider": "./jar/pg.jar?md5=7633f8ea346c082b7aa163be58aed023",
     'sites': [],
     'parses': parses,
     'flags': [
@@ -140,10 +150,11 @@ async function main() {
     json_config.sites.push(data);
 	}
   });
+  json_config.sites = json_config.sites.concat(config_sites);
   json_config.sites = json_config.sites.sort((a, b) => {
     let i = a.name.split('(')[0];
     let j = b.name.split('(')[0];
     return (js_order.indexOf(i) === -1 ? 9999 : js_order.indexOf(i)) - (js_order.indexOf(j) === -1 ? 9999 : js_order.indexOf(j));
   });
-  return JSON.stringify(json_config);
+  return JSON.stringify(json_config,null,"\t");
 }
