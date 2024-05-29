@@ -10,12 +10,25 @@
  path_dir
  **/
 async function main() {
-  let js_order = ['360影视', '菜狗', '奇珍异兽', '优酷', '腾云驾雾', '百忙无果', '哔哩影视'];
+  let js_order = ['360影视[官]', '菜狗[官]', '奇珍异兽[官]', '优酷[官]', '腾云驾雾[官]', '百忙无果[官]', '哔哩影视[官]'];
   let js_path = './drpy_js';
   let live_path = './lives';
   let config_path = './custom.json';
   let js_api = './drpy_libs/drpy2.min.js';
-  let parse_apis = ['777,https://jx.777jiexi.com/player/?url=,0', '8090g,https://www.8090g.cn/jiexi/?url=,0','红狐,https://player.mrgaocloud.com/player/?url=,0'];
+  let parse_apis = [
+  '777,https://jx.777jiexi.com/player/?url=,0', 
+  '8090g,https://www.8090g.cn/jiexi/?url=,0',
+  'ik9,https://yparse.ik9.cc/index.php?url=,0',
+  '杰森,https://jx.jsonplayer.com/player/?url=,0',
+  '阳途,https://jx.yangtu.top/?url=,0',
+  '冰豆,https://bd.jx.cn/?url=,0',
+  'm3u8TV,https://jx.m3u8.tv/jiexi/?url=,0',
+  '听乐,https://jx.dj6u.com/?url=,0',
+  '虾米,https://jx.xmflv.com/?url=,0',
+  '虾米2,https://jx.xmflv.cc/?url=,0',
+  '云析,https://jx.yparse.com/index.php?url=,0',
+  '红狐,https://player.mrgaocloud.com/player/?url=,0',
+  ];
   let parses = parse_apis.map((it) => {
     let _name = it.split(',')[0];
     let _url = it.split(',')[1];
@@ -134,7 +147,8 @@ async function main() {
     if (rname.includes('我的哔哩传参')) {
       extra = '?type=url&params=../json/小学教育.json';
     }
-	let excludes = ['玩偶哥哥','阿里土豆'];
+	//let excludes = ['玩偶哥哥','阿里土豆'];
+	let excludes = [];
 	if(!excludes.includes(rname)){
     let data = {
       'key': `hipy_js_${rname}`,
