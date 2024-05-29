@@ -32,25 +32,23 @@ var rule = {
         'User-Agent': 'MOBILE_UA',
     },
     timeout: 5000,
-    class_parse: '.swiper-wrapper&&a;a&&Text;a&&href;/(\\w+).html',
-    cate_exclude: 'Netflix|今日更新|专题列表|排行榜|热榜',
+    class_parse: '.top_nav&&li;a&&Text;a&&href;/(\\w+).html',
+    cate_exclude: 'Netflix|今日更新|专题列表|排行榜|热榜|文章',
     play_parse: true,
     lazy: $js.toString(() => {
         input = {parse: 1, url: input, js: ''};
     }),
     double: true,
-    推荐: '.content&&.module;.module-main&&a;*;*;*;*',
-    一级: '.module-items&&a;a&&title;img&&data-original;.module-item-note&&Text;a&&href',
+    limit:20,
+    推荐: '.vodlist_item;.vodlist_thumb;*;*;*;*',
+    一级: 'ul.vodlist&&li;a&&title;.lazyload&&data-original;.module-item-note&&Text;a&&href',
     二级: {
-        title: 'h1&&Text;.module-info-tag-link:eq(-1)&&Text',
-        img: 'img.lazyload&&data-original',
-        desc: '.module-info-item-content&&Text;.module-info-tag-link&&Text;.module-info-tag-link:eq(1)&&Text',
-        content: '.module-info-introduction-content&&p&&Text',
-        tabs: '.module-tab-items-box&&.tab-item',
-        lists: '.tab-list:eq(#id)&&a',
-        tab_text: 'body&&Text',
-        list_text: 'body&&Text',
-        list_url: 'a&&href'
+        title: 'h2&&Text;.detail_list&&ul:eq(1)&&li&&a:eq(2)&&Text',
+        img: '.lazyload&&data-original',
+        desc: 'content_detail&&li:eq(1)&&Text;.detail_list&&ul:eq(1)&&li&&a&&Text;.detail_list&&ul:eq(1)&&li&&a:eq(1)&&Text;.detail_list&&ul:eq(1)&&li:eq(2)&&Text;.detail_list&&ul:eq(1)&&li:eq(3)&&Text',
+        content: '.content_desc&&span&&Text',
+        tabs: '.play_source_tab--i&&a',
+        lists: '.content_playlist:eq(#id)&&li'
     },
-    搜索: '.module-card-item;strong&&Text;*;*;*;.module-info-item-content&&Text',
+    搜索: '*',
 }
