@@ -1,9 +1,1 @@
-var rule = {
-    模板: 'mxone5',
-    title: '我播',
-    host: 'https://www.wobotv.cc/',
-    class_parse: '.nav-menu-items&&li:lt(8);a&&Text;a&&href;type/(.*?)/',
-    url: '/show/fyclass/page/fypage/',
-    searchUrl: '/search/**--/page/fypage/',
-    搜索: '.module-items .module-search-item;a&&title;img&&data-src;.video-serial&&Text;.video-serial&&href',
-}
+dmFyIHJ1bGUgPSB7CiAgICDmqKHmnb86ICdteG9uZTUnLAogICAgdGl0bGU6ICfmiJHmkq0nLAogICAgaG9zdDogJ2h0dHBzOi8vd3d3LndvYm90di5jYy8nLAogICAgY2xhc3NfcGFyc2U6ICcubmF2LW1lbnUtaXRlbXMmJmxpOmx0KDgpO2EmJlRleHQ7YSYmaHJlZjt0eXBlLyguKj8pLycsCiAgICB1cmw6ICcvc2hvdy9meWNsYXNzL3BhZ2UvZnlwYWdlLycsCiAgICBzZWFyY2hVcmw6ICcvc2VhcmNoLyoqLS0vcGFnZS9meXBhZ2UvJywKICAgIOaQnOe0ojogJy5tb2R1bGUtaXRlbXMgLm1vZHVsZS1zZWFyY2gtaXRlbTthJiZ0aXRsZTtpbWcmJmRhdGEtc3JjOy52aWRlby1zZXJpYWwmJlRleHQ7LnZpZGVvLXNlcmlhbCYmaHJlZicsCn0=

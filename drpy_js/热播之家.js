@@ -1,13 +1,1 @@
-/**
- * 搜索有验证
- */
-var rule = {
-    模板: '首图2',
-    title: '热播之家',
-    host: 'https://rebozj.pro/',
-    cate_exclude: '专题',
-    url: '/show/fyclass--------fypage---.html',
-    //searchUrl: '/search/**----------fypage---.html',
-    searchUrl: '',
-    searchable: 0,
-}
+LyoqCiAqIOaQnOe0ouaciemqjOivgQogKi8KdmFyIHJ1bGUgPSB7CiAgICDmqKHmnb86ICfpppblm74yJywKICAgIHRpdGxlOiAn54Ot5pKt5LmL5a62JywKICAgIGhvc3Q6ICdodHRwczovL3JlYm96ai5wcm8vJywKICAgIGNhdGVfZXhjbHVkZTogJ+S4k+mimCcsCiAgICB1cmw6ICcvc2hvdy9meWNsYXNzLS0tLS0tLS1meXBhZ2UtLS0uaHRtbCcsCiAgICAvL3NlYXJjaFVybDogJy9zZWFyY2gvKiotLS0tLS0tLS0tZnlwYWdlLS0tLmh0bWwnLAogICAgc2VhcmNoVXJsOiAnJywKICAgIHNlYXJjaGFibGU6IDAsCn0=

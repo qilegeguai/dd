@@ -1,9 +1,1 @@
-var rule = {
-    模板: 'mxpro',
-    title: '皮皮影视',
-    host: 'https://www.pptv06.com',
-    class_parse: '.navbar-items li:gt(0):lt(8);a&&Text;a&&href;/(\\d+).html',
-    tab_exclude: '排序',
-    url: '/vodshow/fyclass--------fypage---.html',
-    searchUrl: '/vodsearch/**----------fypage---.html',
-}
+dmFyIHJ1bGUgPSB7CiAgICDmqKHmnb86ICdteHBybycsCiAgICB0aXRsZTogJ+earuearuW9seinhicsCiAgICBob3N0OiAnaHR0cHM6Ly93d3cucHB0djA2LmNvbScsCiAgICBjbGFzc19wYXJzZTogJy5uYXZiYXItaXRlbXMgbGk6Z3QoMCk6bHQoOCk7YSYmVGV4dDthJiZocmVmOy8oXFxkKykuaHRtbCcsCiAgICB0YWJfZXhjbHVkZTogJ+aOkuW6jycsCiAgICB1cmw6ICcvdm9kc2hvdy9meWNsYXNzLS0tLS0tLS1meXBhZ2UtLS0uaHRtbCcsCiAgICBzZWFyY2hVcmw6ICcvdm9kc2VhcmNoLyoqLS0tLS0tLS0tLWZ5cGFnZS0tLS5odG1sJywKfQ==

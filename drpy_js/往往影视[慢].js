@@ -1,13 +1,1 @@
-Object.assign(muban.mxpro.二级, {
-    tab_text: 'div--small&&Text',
-});
-var rule = {
-    模板: 'mxpro',
-    title: '往往影视',
-    host: 'https://www.wwys.pro/',
-    cate_exclude: '今日更新',
-    url: '/show/fyclass--------fypage---.html',
-    searchUrl: '/search/**----------fypage---.html',
-    class_parse: '.navbar-items li:gt(0):lt(8);a&&Text;a&&href;.*/(\\d+)',
-    tab_exclude: '排序',
-}
+H4sIAIkJW2YC/31Qu0rEQBTt8xWpdpO4M2MpCX6DjXYLYZJMMpHJg5nJCxGsLEQULLQQCwtZSwWriPozu9HPcBJH7LwMzH2cc7j37AWHJJQQC5EmuZVVAc5h1pa8gOv+/LNfLcwjw1QhceBL0krXnEdpDYDIMGOz2b5qzRfGse0ZNeYmrxgxdzVleLwf7j4UYdJTqEknlYyo3ub9ZHxvz1+rUz2ihRjlqZSlcBFqmgY2TSegIiMNCbEkPmlDVkWjyPr1bLh5GG5fhusnjag4UwMkaNGguAuZOgzoiLsSJ0QlkMqMabwgmIf0QLOmAjkOAP+SJlm/xFyMW8Ac1wHmIJUkEyZL3URa27bLpLVje/jHo/GnnMQedJC1XEZb9q8fyte/g4aLq01/ORr6DeV5uhOYAQAA

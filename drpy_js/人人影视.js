@@ -1,15 +1,1 @@
-Object.assign(muban.mxone5.二级, {
-    tabs: $js.toString(() => {
-        TABS = ['道长在线']
-    }),
-    lists: '.module-blocklist:eq(#id)&&a',
-});
-muban.mxone5.二级.title = '.title-link&&Text;.tag-link&&Text';
-var rule = {
-    模板: 'mxone5',
-    title: '人人影视',
-    host: 'https://www.renren.pro',
-    url: '/list/fyclass?page=fypage',
-    searchUrl: '/search?wd=**',
-    class_parse: '.nav-menu-items&&li;a&&Text;a&&href;/list/(.*)',
-}
+T2JqZWN0LmFzc2lnbihtdWJhbi5teG9uZTUu5LqM57qnLCB7CiAgICB0YWJzOiAkanMudG9TdHJpbmcoKCkgPT4gewogICAgICAgIFRBQlMgPSBbJ+mBk+mVv+WcqOe6vyddCiAgICB9KSwKICAgIGxpc3RzOiAnLm1vZHVsZS1ibG9ja2xpc3Q6ZXEoI2lkKSYmYScsCn0pOwptdWJhbi5teG9uZTUu5LqM57qnLnRpdGxlID0gJy50aXRsZS1saW5rJiZUZXh0Oy50YWctbGluayYmVGV4dCc7CnZhciBydWxlID0gewogICAg5qih5p2/OiAnbXhvbmU1JywKICAgIHRpdGxlOiAn5Lq65Lq65b2x6KeGJywKICAgIGhvc3Q6ICdodHRwczovL3d3dy5yZW5yZW4ucHJvJywKICAgIHVybDogJy9saXN0L2Z5Y2xhc3M/cGFnZT1meXBhZ2UnLAogICAgc2VhcmNoVXJsOiAnL3NlYXJjaD93ZD0qKicsCiAgICBjbGFzc19wYXJzZTogJy5uYXYtbWVudS1pdGVtcyYmbGk7YSYmVGV4dDthJiZocmVmOy9saXN0LyguKiknLAp9
