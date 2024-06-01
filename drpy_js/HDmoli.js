@@ -1,12 +1,1 @@
-/**
- * 待补充lazy免嗅探，不然嗅探过程中遇到的这种地址不对 https://www.hdmoli.pro/js/player/videojs/videojs.html?v=1.61&videourl=/play/2203-0-0.html,https://v.damoli.pro/v/movie/Rebel.Moon.Part.Two.mp4,,2203,0,0
- */
-var rule = {
-    模板: '首图',
-    title: 'HDmoli',
-    host: 'https://www.hdmoli.pro',
-    url: '/mlist/indexfyclass-fypage.html',
-    searchUrl: '/search.php?page=fypage&searchword=**&searchtype=',
-    class_parse: '.myui-header__menu li;a&&Text;a&&href;index(\\d+)\.html',
-    lazy: ``,
-}
+LyoqCiAqIOW+heihpeWFhWxhennlhY3ll4XmjqLvvIzkuI3nhLbll4XmjqLov4fnqIvkuK3pgYfliLDnmoTov5nnp43lnLDlnYDkuI3lr7kgaHR0cHM6Ly93d3cuaGRtb2xpLnByby9qcy9wbGF5ZXIvdmlkZW9qcy92aWRlb2pzLmh0bWw/dj0xLjYxJnZpZGVvdXJsPS9wbGF5LzIyMDMtMC0wLmh0bWwsaHR0cHM6Ly92LmRhbW9saS5wcm8vdi9tb3ZpZS9SZWJlbC5Nb29uLlBhcnQuVHdvLm1wNCwsMjIwMywwLDAKICovCnZhciBydWxlID0gewogICAg5qih5p2/OiAn6aaW5Zu+JywKICAgIHRpdGxlOiAnSERtb2xpJywKICAgIGhvc3Q6ICdodHRwczovL3d3dy5oZG1vbGkucHJvJywKICAgIHVybDogJy9tbGlzdC9pbmRleGZ5Y2xhc3MtZnlwYWdlLmh0bWwnLAogICAgc2VhcmNoVXJsOiAnL3NlYXJjaC5waHA/cGFnZT1meXBhZ2Umc2VhcmNod29yZD0qKiZzZWFyY2h0eXBlPScsCiAgICBjbGFzc19wYXJzZTogJy5teXVpLWhlYWRlcl9fbWVudSBsaTthJiZUZXh0O2EmJmhyZWY7aW5kZXgoXFxkKylcLmh0bWwnLAogICAgbGF6eTogYGAsCn0=

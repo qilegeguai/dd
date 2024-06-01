@@ -1,14 +1,1 @@
-Object.assign(muban.mxpro.二级, {
-    tab_text: 'div--small&&Text',
-});
-var rule = {
-    模板: 'mxpro',
-    title: '爱看hd',
-    host: 'https://www.aikanhd.vip/',
-    headers: {'User-Agent': 'IOS_UA'},
-    class_parse: '.navbar-items li:gt(0):lt(10);a&&Text;a&&href;.*/(\\d+)',
-    cate_exclude: '今日更新|排序|福利区',
-    url: '/vodshow/fyclass--------fypage---.html',
-    searchUrl: '/vodsearch/**----------fypage---/',
-    tab_exclude: '排序',
-}
+H4sIAIkJW2YC/2WRPU/DMBCG9/6KTE1SGqesiRg6MnWAbpUiJ3HjgPMh20latd0rqKjEAAMwMPC1gcQUBv5Mm/wNnDRVB26xfXqf9+58A/sCORxAxnwvVILEhiEIJjGNwCZflflbV5q1JBEc2hZHE25IsuunmsYCSEi7fS5Scre1UM1WCqlEE4KkkwYp3p+Lp18B1H5CVfv4nCCRK5df5eM1dps0jlhljTmPmaHrWZYB6F/CELsg9WN9r0LQRZQZ0kweMkS1vodCLgvudHBmDfvyYidziBjHiiFlVSUQwtSGVPM5CphEfMPjSk81CFeOe6oJdzNUJ6ZobIKOroxG7pHalHQgRxaaOCRxK7PNz1Vx/1I8fBd3n/Pi5nabr+fl63q7/Niu8gZJKBFKPY1chqNMH0/rfrQmxtMYekhcAOYBaRCGIHXw8ADWb73T0bR/3P4zqo0cGtv1Uq3iD7b84WrSAQAA
