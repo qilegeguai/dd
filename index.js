@@ -80,6 +80,12 @@ async function main() {
 	  console.log(`get config_file error:${e.message}`);
   }
   let channels = [];
+  channels.push({
+	  'name':'稳定github直播',
+	  'urls':[
+		'proxy://do=live&type=txt&ext=https://ghproxy.net/https://raw.githubusercontent.com/ssili126/tv/main/itvlist.txt',
+	  ],
+  });
   live_files.forEach((it) => {
     let absp = pathLib.join(path_dir, `${live_path}/${it}`).replace(/\\/g, '/');
     absp = 'http://127.0.0.1:9978/api/v1/file/' + absp.split('/zyplayer/file/')[1];
