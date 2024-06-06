@@ -6,7 +6,7 @@
 	"sites": [
 		{
 			"key": "豆瓣",
-			"name": "夜泊金沙贵宾专线",
+			"name": "夜泊金沙至尊专线",
 			"type": 3,
 			"api": "csp_Douban",
 			"searchable": 0,
