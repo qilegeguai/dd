@@ -5,6 +5,16 @@
 	"spider": "./jar/pg.jar?md5=7633f8ea346c082b7aa163be58aed023",
 	"sites": [
 		{
+			"key": "豆瓣",
+			"name": "豆瓣",
+			"type": 3,
+			"api": "csp_Douban",
+			"searchable": 0,
+			"changeable": 1,
+			"indexs":1,
+			"ext": "./lib/douban.json"
+		},
+		{
 			"key": "hipy_js_360影视[官]",
 			"name": "360影视[官](drpy_t3)",
 			"type": 3,
