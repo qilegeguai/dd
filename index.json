@@ -12,7 +12,7 @@
 			"searchable": 0,
 			"changeable": 1,
 			"indexs":1,
-			"ext": "./lib/douban.json"
+			"ext": "./json/douban.json"
 		},
 		{
 			"key": "hipy_js_360影视[官]",
