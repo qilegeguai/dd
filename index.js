@@ -9,6 +9,9 @@
  path
  path_dir
  **/
+function naturalSort(arr,key) {
+  return arr.sort((a, b) => a[key].localeCompare(b[key], undefined, { numeric: true, sensitivity: 'base' }));
+}
 async function main() {
   let js_order = ['360影视[官]', '菜狗[官]', '奇珍异兽[官]', '优酷[官]', '腾云驾雾[官]', '百忙无果[官]', '哔哩影视[官]'];
   let js_path = './drpy_js';
@@ -176,5 +179,9 @@ async function main() {
     let j = b.name.split('(')[0];
     return (js_order.indexOf(i) === -1 ? 9999 : js_order.indexOf(i)) - (js_order.indexOf(j) === -1 ? 9999 : js_order.indexOf(j));
   });
+  let top_sites = json_config.sites.filter(x=>js_order.includes(x.name.split('(')[0]));
+  let other_sites = json_config.sites.filter(x=>!js_order.includes(x.name.split('(')[0]));
+  let ret_sites = top_sites.concat(naturalSort(other_sites,'name'));
+  json_config.sites = ret_sites;
   return JSON.stringify(json_config,null,"\t");
 }
